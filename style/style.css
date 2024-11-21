@@ -1,33 +1,51 @@
 .navbar {
-  box-shadow: 0 0 20px rgb(2, 49, 2);
-  background-color: rgba(66, 64, 64, 0.493);
+  box-shadow: 0 0 20px rgb(11, 82, 11);
+  background-color: rgba(36, 21, 22, 0.4);
   opacity: 100%;
 }
-
-.logo {
-  color: white !important;
-  margin: 0 10px;
+.navbar .logo {
+  height: 40px;
+  margin: 0 20px; /* Լոգոն կտեղադրվի ձախ մասում */
 }
 
 .nav-item {
+  text-shadow: 2px 0 black, 0 1px white, 1px 0 black, 0 -1px white;
   font-family: 'Kaushan Script', cursive;
   display: inline;
-  font-size: 20px;
-  align-items: center;
+  font-size: 18px;
   text-align: center;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 ul a:visited {
-  color: rgb(88, 6, 6);
+  color: rgb(238, 178, 13);
+}
+
+.img {
+  width: 100%;
+  height: 600px;
 }
 
 .img1 {
   width: 100%;
   height: 300px;
-  box-shadow: 0 0 20px rgba(77, 2, 2, 0.5);
+  box-shadow: 0 0 20px rgba(48, 1, 1, 0.5);
   /* равномерная тень */
   border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.img1:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.img3 {
+  margin: 10px;
+}
+.row {
+  overflow: scroll;
+  position: relative;
 }
 
 h1 {
@@ -35,11 +53,6 @@ h1 {
   font-size: large;
   font-family: 'Kaushan Script', cursive;
   text-align: center;
-}
-
-.btn {
-  margin: 0 10px;
-padding: 30px;
 }
 
 .h2 {
@@ -64,18 +77,23 @@ h4 {
 
 
 
-
 .video-crop-container {
-  width: 600px; /* Ширина контейнера */
-  height: 300px; /* Высота контейнера */
-  overflow: hidden; /* Обрезать всё, что выходит за рамки */
+  width: 600px;
+  /* Ширина контейнера */
+  height: 300px;
+  /* Высота контейнера */
+  overflow: hidden;
+  /* Обрезать всё, что выходит за рамки */
   position: relative;
 }
+
 .video-crop-container video {
   position: absolute;
-  top: -10%; /* Сдвиг для фокусировки на нужной части видео */
+  top: -10%;
+  /* Сдвиг для фокусировки на нужной части видео */
   left: 0;
-  width: 100%; /* Убедиться, что видео занимает ширину контейнера */
+  width: 100%;
+  /* Убедиться, что видео занимает ширину контейнера */
 }
 
 .carousel-item img {

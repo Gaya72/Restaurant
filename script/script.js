@@ -7,16 +7,12 @@ myCarousel.addEventListener('slide.bs.carousel', event => {
 
 
 
-const video = document.getElementById("sourceVideo");
-  const canvas = document.getElementById("videoCanvas");
-  const ctx = canvas.getContext("2d");
+console.log(bootstrap);
+document.addEventListener("DOMContentLoaded", function() {
+  var toggler = document.querySelector(".navbar-toggler");
+  var collapse = document.querySelector("#collapsibleNavbar");
 
-  video.addEventListener("play", () => {
-    function draw() {
-      if (!video.paused && !video.ended) {
-        ctx.drawImage(video, 50, 50, 300, 150, 0, 0, 400, 200);
-        requestAnimationFrame(draw);
-      }
-    }
-    draw();
+  toggler.addEventListener("click", function() {
+      collapse.classList.toggle("show");
   });
+});
