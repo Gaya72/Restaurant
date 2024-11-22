@@ -4,7 +4,7 @@
   opacity: 100%;
 }
 .navbar .logo {
-  height: 40px;
+  height: 35px;
   margin: 0 20px; /* Լոգոն կտեղադրվի ձախ մասում */
 }
 
@@ -29,7 +29,7 @@ ul a:visited {
 .img1 {
   width: 100%;
   height: 300px;
-  box-shadow: 0 0 20px rgba(48, 1, 1, 0.5);
+  box-shadow: 0 0 30px rgba(70, 3, 3, 0.5);
   /* равномерная тень */
   border-radius: 10px;
   transition: transform 0.3s ease;
@@ -55,17 +55,17 @@ h1 {
   text-align: center;
 }
 
-.h2 {
-  margin: 10px;
-  color: #630b0b !important;
-  text-shadow: 1px 1px 5px rgb(15, 15, 15), 0 0 35px #0707071a, 0 0 30px darkred;
+h2 {
+ font-size: 46;
   letter-spacing: 6px;
-  text-indent: 100px;
   font-family: 'Kaushan Script', cursive;
 }
 
+.fs-2 {
+  color: white;
+}
 p {
-  color: rgb(51, 41, 37);
+  color: rgb(12, 12, 12);
   font-size: medium;
   font-family: 'Kaushan Script', cursive;
 }
@@ -75,6 +75,23 @@ h4 {
   font-family: 'Kaushan Script', cursive;
 }
 
+/* Carousel-ի լայնությունը և կենտրոնացումը */
+#carouselExampleCaptions {
+  width: 100%; /* Carousel-ը զբաղեցնում է էկրանի 100%-ը */
+  margin: 0 auto; /* Կենտրոնացում էկրանի վրա */
+}
+
+/* Պատկերի չափաբերման և ճիշտ մասշտաբի ապահովում */
+.carousel-inner img {
+  width: 100%; /* Լրիվ լայնությամբ */
+  height: 100%; /* Ֆիքսված բարձրություն */
+  object-fit: cover; /* Պատկերը հարմարեցնում է ֆոնի չափերին՝ առանց աղավաղման */
+}
+
+/* Տարրերի բարձրություն */
+.carousel-item {
+  height: 800px; /* Ֆիքսված բարձրություն բոլոր սլայդների համար */
+}
 
 
 .video-crop-container {
@@ -96,57 +113,4 @@ h4 {
   /* Убедиться, что видео занимает ширину контейнера */
 }
 
-.carousel-item img {
-  width: 50%;
-  /* Set image width to 50% of the container */
-  margin: 0 50%;
-  /* Center the image horizontally */
-}
 
-.flip-box {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px;
-  /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-box-front,
-.flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-box-front {
-  background-color: #bbb;
-  color: black;
-}
-
-/* Style the back side */
-.flip-box-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-}

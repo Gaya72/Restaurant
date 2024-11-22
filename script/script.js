@@ -1,18 +1,12 @@
-const myCarousel = document.getElementById('myCarousel')
-
-myCarousel.addEventListener('slide.bs.carousel', event => {
-  // do something...
-})
 
 
 
-
-console.log(bootstrap);
-document.addEventListener("DOMContentLoaded", function() {
-  var toggler = document.querySelector(".navbar-toggler");
-  var collapse = document.querySelector("#collapsibleNavbar");
-
-  toggler.addEventListener("click", function() {
-      collapse.classList.toggle("show");
-  });
+var myCarousel = document.querySelector('#carouselExampleCaptions');
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 3000, // 3 վայրկյան
+  ride: 'carousel' // Սկսել ավտոմատ
 });
+
+
+
+
