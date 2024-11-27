@@ -10,7 +10,7 @@ html {
 }
 
 .navbar .logo {
-  height: 35px;
+  height: 40px;
   margin: 0 20px;
   /*logo place a gauche */
 }
@@ -26,6 +26,9 @@ html {
 
 ul a:visited {
   color: rgb(238, 178, 13);
+}
+.navbar-toggler-icon {
+  filter: invert(3); /* Դարձնում է սպիտակ գույն */
 }
 
 .img1 {
@@ -191,9 +194,9 @@ p {
   background-color: rgba(248, 243, 243, 0.993);
   /* Fond semi-transparent */
   display: inline-flex;
-  padding: 30px;
-  border-radius: 6px;
-  letter-spacing: 8px;
+  padding: 0 30px;
+  border-radius: 8px;
+  letter-spacing: 7px;
 }
 
 /* Hauteur des sections pour démontrer le défilement */
