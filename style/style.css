@@ -30,7 +30,7 @@ ul a:visited {
 .navbar-toggler-icon {
   filter: invert(3); /* Դարձնում է սպիտակ գույն */
 }
-
+ 
 .img1 {
   width: 100%;
   height: 300px;
@@ -70,22 +70,9 @@ ul a:visited {
   /* Ստվերի ուժեղացում */
 }
 
-.modal-dialog {
-  max-width: 90%;
-  margin: 30px auto;
-}
-
-.modal-body img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  /* Նկարը համաչափ կպահպանվի */
-  border-radius: 10px;
-}
-
 h1 {
   color: rgb(185, 7, 7) !important;
-
+font-size: 16;
   font-family: 'Kaushan Script', cursive;
   text-align: center;
 }
@@ -113,7 +100,6 @@ p {
 
 
 .content {
- 
   padding: 20px;
   text-align: center;
   position: relative;
@@ -206,6 +192,23 @@ p {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:center;
   letter-spacing: 7px;
+}
+
+..container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
+  grid-template-rows: repeat(2, auto); /* 2 строки с автоматической высотой */
+  gap: 20px; /* Расстояние между элементами */
+  max-width: 900px; /* Опционально, чтобы ограничить ширину контейнера */
+  margin: 0 auto; /* Центрирование контейнера */
+}
+
+.item {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
 }
