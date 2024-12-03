@@ -6,7 +6,7 @@ html {
 .navbar {
   box-shadow: 0 0 20px rgb(11, 82, 11);
   background-color: rgba(4, 20, 14);
-  opacity: 80%;
+  opacity: 70%;
 }
 
 .navbar .logo {
