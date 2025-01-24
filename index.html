@@ -12,17 +12,18 @@
 </head>
 
 <body class="body" style="background-color:  rgba(202, 188, 157, 0.58);">
-
+<header class="header">
     <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid">
             <!--logo-->
             <a class="navbar-brand" href="https://hamovtnak.am/hy/">
-                <img class="logo" src="img/logo.svg" alt="icon">
+                <img class="logo" src="img/logo.svg" alt="logo du site">
             </a>
             <!--hamburger menu-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
                 aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon" aria-label="Ouvrir le menu"></span>
+
             </button>
             <!--menu-->
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
@@ -34,7 +35,7 @@
                         <a class="nav-link" href="categorie.html">Categorie</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="plats.html">Plats</a>
+                        <a class="nav-link" href="plats.html">Menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Contact</a>
@@ -43,7 +44,8 @@
             </div>
         </div>
     </nav>
-
+</header>
+    
     <div class="background-video">
         <video autoplay loop muted>
             <source src="video/vid1.mp4" type="video/mp4">
@@ -54,6 +56,7 @@
             <h1>Maisonnette à saveurs</h1><br>
         </div>
     </div>
+
 
     <div class="col-12 p-5 mb-md-5 ">
         <div class="container text-center">
@@ -77,10 +80,9 @@
                     <div class="text-center">
                         <div class="card">
                             <div class="zoom-opacity">
-                                <img src="img/mecapse.jpg" class="img1 card-img-top" alt="Assorties">
+                                <img src="img/mecapse.jpg" class="img1 card-img-top" alt="Assorties" loading="lazy">
                                 <div class="card-body">
                                     <h3 class="card-title"><br>À Partager</h3>
-                                    <h5>Կիսվելու</h5>
                                     <p class="card-text">S’inspirant de la cuisine armenienne, nous propose découvrir
                                         les assiettes à partager faites maison avec des produits de qualité.</p>
                                     <a href="categorie.html" class="btn btn-warning">Go somewhere</a>
@@ -95,10 +97,9 @@
                     <div class="text-center">
                         <div class="card">
                             <div class="zoom-opacity">
-                                <img src="img/manti.jpg" class="img1 card-img-top" alt="...">
+                                <img src="img/manti.jpg" class="img1 card-img-top" alt="Manti"  loading="lazy">
                                 <div class="card-body">
-                                    <h3 class="card-title"><br>Entrées</h3>
-                                    <h5>Ուտեստներ</h5>
+                                    <h3 class="card-title"><br>Entrée</h3>
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk
                                         of the card's content.</p>
@@ -114,20 +115,18 @@
                     <div class="text-center">
                         <div class="card">
                             <div class="zoom-opacity">
-                                <img src="img/tolma.jpg" class="img1 card-img-top" alt=" ">
+                                <img src="img/tolma.jpg" class="img1 card-img-top" alt="Tolma, un plat traditionnel arménien" loading="lazy">
                                 <div class="card-body">
-                                    <h3 class="card-title"><br>Plats</h3>
-                                    <h4>Ուտեստներ</h4>
-                                    <p class="card-text">Some quick example text to build on the card title and make up
-                                        the bulk
-                                        of the card's content.</p>
-                                    <a href="categorie.html" class="btn btn-warning">Go somewhere</a>
+                                    <h3 class="card-title"><br>Plat Principal</h3>
+                                    <p class="card-text">Découvrez le goût authentique de la cuisine arménienne avec notre tolma fait maison.</p>
+                                    <a href="categorie.html" class="btn btn-warning">Découvrir</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="col-sm-4">
                 <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded-4">
                     <div class="text-center">
@@ -135,8 +134,7 @@
                             <div class="zoom-opacity">
                                 <img src="img/gini.jpeg" class="img1 card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h3 class="card-title"><br>Les Boissons</h3>
-                                    <h5>Խմիչք</h5>
+                                    <h3 class="card-title"><br>Boisson</h3>
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk
                                         of the card's content.</p>
@@ -154,8 +152,7 @@
                             <div class="zoom-opacity">
                                 <img src="img/gata.jpg" class="img1 card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h3 class="card-title"><br>Desserts</h3>
-                                    <h5>Դեսերտներ</h5>
+                                    <h3 class="card-title"><br>Dessert</h3>
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk
                                         of the card's content.</p>
@@ -173,8 +170,8 @@
                             <div class="zoom-opacity">
                                 <img src="img/tey.jpeg" class="img1 card-img-top" alt=" ">
                                 <div class="card-body">
-                                    <h3 class="card-title"><br>Boissons Shaudes</h3>
-                                    <h4>Տաք Խմիչքներ</h4>
+                                    <h3 class="card-title"><br>Boisson Chaude</h3>
+                                    
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk
                                         of the card's content.</p>
@@ -200,7 +197,7 @@
             <a href="plats.html" class="btn btn-success" role="button">Nos Plats</a>
         </p>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-sm-4">
                 <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded-circle">
@@ -209,7 +206,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded-circle">
-                    <img class="img1 rounded-circle" src="img/tolma.jpg" alt="tolma">
+                    <img class="img1 rounded-circle" src="img/tolma.jpg" alt="tolma" loading="lazy">
                 </div>
             </div>
             <div class="col-sm-4">
@@ -219,63 +216,87 @@
             </div>
         </div>
     </div>
-
+    <div class="container-fluid">
+        <img class="img2"  src="img/salle.jpg" alt="Full-Screen Image">
+   </div>
+sssssssssssssssssssssssss
     <!-- Footer -->
-    <footer class="bg-dark text-light py-4">
+    <footer class=" footer text-light py-2 fixed-bottom">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4">
-                    <h5>Hamov Tnak<br>
-                        ՀԱՄՈՎ ՏՆԱԿ</h5>
-                    <p>Subscribe to our newsletter and get a 25% discount!</p>
+                <div class="col-sm-4">
+                    <a class="navbar-brand" href="https://hamovtnak.am/hy/">
+                        <img class="logo" src="img/logo.svg" alt="logo" width="50" height="30">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <p>Abonnez-vous à notre newsletter et bénéficiez de 25% de réduction !</p>
                     <form>
                         <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Enter your email">
-                            <button class="btn btn-primary">Subscribe</button>
+                            <input type="email" class="form-control" placeholder="Votre email">
+                            <button class="btn btn-warning btn-lg align-items-center">
+                                <i class="bi bi-arrow-right-circle me-2" style="font-size: 1.5rem;"></i>
+                                <img src="img/send-arrow-up.svg" alt="icon" height="20">
+                            </button>
                         </div>
                     </form>
+
                     <a class="navbar-brand" href="#"></a>
                     <div class="rounded-circle">
-                        <img class="img3" src="img/inst.png" alt="instagram" width="25" height="25">
-                        <img class="img3" src="img/fb.png" alt="facebook" width="40" height="20">
-                        <img class="img3 " src="img/yt.png" alt="youtube" width="25" height="25">
-                        <img class="img3" src="img/twit.png" alt="twitter" width="40" height="40">
+                        <img class="img" src="img/inst.png" alt="instagram" width="25" height="25">
+                        <img class="img" src="img/fb.png" alt="facebook" width="40" height="20">
+                        <img class="img " src="img/yt.png" alt="youtube" width="25" height="25">
+                        <img class="img" src="img/twit.png" alt="twitter" width="40" height="40">
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <h5>Contact us</h5>
-                    <p>5 Mashtots Ave, Yerevan 0015, Armenia</p>
+                <div class="col-sm-3">
+                    <h4>Contactez-nous</h4>
+                    <p>5 Mashtots Ave, Erevan 0015, Arménie</p>
                     <p>+374 10 123456</p>
                     <p>info@armtaste.am</p>
-                    <p>Sun - Sat / 10:00 AM - 6:00 PM</p>
+                    <p>Dim - Sam / 10 00 AM - 18H00 PM</p>
                 </div>
 
-                <div class="col-md-4">
-                    <h5>Links</h5>
+                <div class="col-sm-2 ">
+                    <h4>Liens</h4>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-light">About Us</a></li>
-                        <li><a href="#" class="text-light">Contact Us</a></li>
-                        <li><a href="#" class="text-light">Our Menu</a></li>
-                        <li><a href="#" class="text-light">FAQ</a></li>
-                    </ul></div>
-                    <div class="col-md-4">
-                    <h5 class="mt-3">Instagram Gallery</h5>
-                    <div class="d-flex">
-                        <img src="image1.jpg" alt="Gallery 1" class="img-thumbnail" width="60">
-                        <img src="image2.jpg" alt="Gallery 2" class="img-thumbnail" width="60">
-                        <img src="image3.jpg" alt="Gallery 3" class="img-thumbnail" width="60">
+                        <li><a href="index.html" class="p text-light">À propos de nous</a></li>
+                        <li><a href="#" class="p text-light">Contactez-nous</a></li>
+                        <li><a href="categorie.html" class="p text-light">Notre menu</a></li>
+                        <li><a href="#" class="p text-light">FAQ</a></li>
+                    </ul>
+                </div>
+                
+
+                <div class="col-sm-3 mb-md-3">
+                    <h4 class="mt-0">Instagram Gallery</h4>
+                    <div class="d-flex flex-wrap ">
+                        <img src="img/lahm1.jpg" alt="Gallery 1" class="img3-thumbnail" width="70" height="70">
+                        <img src="img/burger.jpg" alt="Gallery 2" class="img3-thumbnail" width="70" height="70">
+                        <img src="img/qebab.jpeg" alt="Gallery 3" class="img3-thumbnail" width="70" height="70">
+                        <img src="img/salade.jpg" alt="Gallery 3" class="img3-thumbnail" width="70" height="70">
+                    </div>
+                    <div class="d-flex flex-wrap ">
+                        <img src="img/xachapuri.jpg" alt="Gallery 4" class="img3-sthumbnail" width="70" height="70">
+                        <img src="img/bcompot.jpeg" alt="Gallery 5" class="img3-thumbnail" width="70" height="70">
+                        <img src="img/gata.jfif" alt="Gallery 6" class="img3-thumbnail" width="70" height="70">
+                        <img src="img/xmichq.jpg" alt="Gallery 3" class="img3-thumbnail" width="70" height="70">
                     </div>
                 </div>
+            </div>
         </div>
     </footer>
 
-
+  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
     <script src="script/script.js"></script>
+    
+      
 
 </body>
 
